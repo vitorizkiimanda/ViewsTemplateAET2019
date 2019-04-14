@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text View"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/button_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image View"
+        android:background="@android:color/holo_green_light"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/button_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Text"
+        android:background="@android:color/holo_orange_light"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/button_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"
+        android:background="@android:color/holo_purple"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/button_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
