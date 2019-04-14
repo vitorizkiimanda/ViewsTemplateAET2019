@@ -39,7 +39,11 @@ public class AuthorActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // todo: goto back activity from here
-                finish();
+
+                if (mWebview.canGoBack()) {
+                    mWebview.goBack();
+                }
+                else finish();
                 return true;
 
             default:
@@ -76,8 +80,17 @@ public class AuthorActivity extends AppCompatActivity {
                 Toast.makeText(AuthorActivity.this, "Oh no! " + description, Toast.LENGTH_SHORT).show();
             }
         });
-
-
         mWebview.loadUrl("https://github.com/vitorizkiimanda");
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mWebview.canGoBack()) {
+            mWebview.goBack();
+            return;
+        }
+
+        // Otherwise defer to system default behavior.
+        super.onBackPressed();
     }
 }
